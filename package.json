@@ -1,0 +1,16 @@
+{
+    "name": "bugtracker",
+    "version": "1.0.0",
+    "description": "Projeto desenvolvido no FullStack Lab - DevPleno",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "author": "felipeOliveira",
+    "license": "MIT",
+    "dependencies": {
+        "ejs": "^2.7.1",
+        "express": "^4.17.1",
+        "google-spreadsheet": "^2.0.8"
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>BugTracker</title>
+    </head>
+    <body>
+        <main id="app">
+            <div class="form-container">
+                <h1>Reporte de bugs</h1>
+                <p>Preencha todos os dados a seguir</p>
+                <hr>
+                <form method="POST">
+                    <label for="name_input">Nome</label>
+                    <input type="text" id="name_input" name="name" />
+                    <br><br>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" />
+                    <br><br>
+
+                    <label for="issueType">Classificação do bug</label>
+                    <input type="text" id="issueType" name="issueType" />
+                    <br><br>
+
+                    <label for="howToReproduce">Como reproduzir o erro?</label>
+                    <input type="text" id="howToReproduce" name="howToReproduce" />
+                    <br><br>
+
+                    <label for="expectedOutput">Qual a saída esperada?</label>
+                    <input type="text" id="expectedOutput" name="expectedOutput" />
+                    <br><br>
+
+                    <label for="receivedOutput">A saída recebida:</label>
+                    <input type="text" id="receivedOutput" name="receivedOutput" />
+                    <br><br>
+
+                    <button type="submit">enviar</button>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

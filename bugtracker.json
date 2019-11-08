@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "fluent-potion-258319",
+  "private_key_id": "1b8c0977987d1cc1434d1541221b4e1b6d19ee9c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC25CwbgcnLIKeh\nHISlh+mvEE/+Z7DkMpW7Pc6+dDvKp6FmPNNTjIVPzoVVj282G7DoIaaPW+Hc14l0\nXBXOVFZH1AU+KISbBmj/3f477NT/0Ei2TNiTqSI7/iYGYhiF2ScZjqYirflbSC9X\num6R39YMYKYt/ibvDrhwQR88q6TY8DbDmAmNc5/8A47YvBXDArMuMr38fsxJ2/H5\neeDp9rLNloptYXT7k6kuS8U3H98Jz54pG3w2j4CvCcepQRptdgOThkJIr6cEvx8D\nV8rcF5gFATw1vZFlAuY7gHJGFzbIhaG1gQymrwRQ376z8wsJ0n4U2rE9jwIc+VU7\nfWsELnoVAgMBAAECggEAGRhQ5wtVhY47AhPYLaBrE67g0w8mSgGY4wLVmfN3+tQq\nhM1Gz/mBl1RGnllakKmXChsH8DbS1IssnK8//Lo8xolUmNVVcLId+THcPxu9lEZf\nm8gKlaRJAsNaM1kFdWQ5Bbw5lpuZkgljGZ4GqvR0OemPE9OCQx4Zd6mv4BLLQUrk\nv8AP5zKtBeq9w/kiG4plwPgtQCHjj7zpJcyNDgSY1l6FsXUU4MmHwu5n4CFQShy5\n1dUSxMFCrcutPbHvWwuy2ZVxaQV91G10gld7niwP1+uxsUDZ/YflYdxe/nbO6/nr\ncFR2VaLQMZhfSQWeutLlt2fbE5BMuxUhLKefNc8NUQKBgQD4OjVHEuV9UTNzT24K\nfVmxElMS2Fw4MPeLe4MlhLm/XACbHnzyUwmhzSnJ0nR3oVjjvWg/YblAwxA0QIj3\n9zvFAdIoHC9Gc2oA+Mpg+Vdv21GBQ3SRwDkCinZIOSMKJxfQwUgg6FV9OOLKs3A1\nMMd33NlQfNeQ5xItaMLwJBfe3QKBgQC8njrXy0KeCAnki0H/7C9Bd/S6jEDgmhE6\nDBmGNweppBP2K2nYggKXEtcsVDlKpKF9J9IF6C4iAAjrSz/tJDkxreSVbYLmoGma\nHHzRXPWXWIP4sgRa2+ukEnb860RxjuLvysoszgRpqQRt7yXvwWWJpc4X0dRX4JLW\n+s2dS5romQKBgBxnNK90RxQm1XdNUG8c1sV/LkhKv4qid8DbGi+R11tBIMSfIXbs\n7343Jp/0V+VUbgJpKuONwA/cAh+ofsO443rwcWarivFJxYhk72tXPJ0NAG+FE3KW\nBy/2PgCXoR3JSV1WsHUrgJS6jKDbFWzQrxJVD/y4vEXVWuwdP6kQyDZ1AoGAU7dn\nJqBw0POAcI/em1iZINW9KY9WvFmli74TFh8Wp5TLx1c9g3sw6xzRpDs9soOfqY0j\nCrwivbSGQOkFVpvdRs+HxUr17qcEOAKs47/+wU3oRVm91RYHYKtRZLCHkF97GjNH\nyNsn2j3KWYDrtZ6BErck4i2fseFbS0/GMyp7dwECgYEAz91s/hgzujZF8aB9f35C\n8T+MJMTxtxjZYXuE8p0fGshLwt9uc4zs6qD+3bQfF5MW3Y2AmrGEtL7zFcF/juoa\nGe1CFSuiCjsGhd3mQ3dG+3Z76IJ4lwDFGNedXuVycZvFGRyrwvbC+OV7a7RitMhP\n1gxRqnVossOH/vq3V0GU89A=\n-----END PRIVATE KEY-----\n",
+  "client_email": "bugtracker@fluent-potion-258319.iam.gserviceaccount.com",
+  "client_id": "105221277051459574991",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bugtracker%40fluent-potion-258319.iam.gserviceaccount.com"
+}
