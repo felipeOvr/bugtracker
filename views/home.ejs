@@ -5,41 +5,168 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>BugTracker</title>
+        <link rel="shortcut icon" href="https://cdn1.iconfinder.com/data/icons/social-object-set-2-1/74/27-512.png" type="image/x-icon">
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap');
+            *
+            {
+                margin: 0 ;
+                padding: 0 ;
+                box-sizing: border-box ;
+                font-family: 'Raleway', sans-serif ;
+            }
+            body
+            {
+                background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%) ;
+            }
+            .form-container
+            {
+                background-color: #fff ;
+                max-width: 500px ;
+                margin: 1rem auto ;
+                padding: 2rem ;
+                border-radius: 3px ;
+                box-shadow: 1px 1px 3px #2a2a2a
+            }
+            .text-intro
+            {
+                margin: 1rem 0 ;
+                text-align: center ;
+                font-size: 13px ;
+                color: #555
+            }
+            .bugtracker-logo
+            {
+                width: 100%
+            }
+            form input,
+            form textarea,
+            form button,
+            form select
+            {
+                display: block ;
+                width: 100%
+            }
+            form select
+            {
+                cursor: pointer
+            }
+            form input, form textarea, form select
+            {
+                margin-bottom: 1rem
+            }
+            form label
+            {
+                display: inline-block ;
+                margin-bottom: 5px ;
+                text-transform: uppercase ;
+                font-size: 13px ;
+                font-weight: 600 ;
+                color: #222
+            }
+            form span
+            {
+                font-size: 12px ;
+                display: block ;
+                margin-bottom: 5px
+            }
+            form input, form textarea, form select
+            {
+                outline: 0 ;
+                transition: all 0.3s ;
+                background: none ;
+                border: none ;
+                border: 1px solid #ccc ;
+                padding: 10px ;
+                border-radius: 2px ;
+                font-size: 13px ;
+            }
+            form textarea
+            {
+                min-height: 100px
+            }
+            form input:focus,
+            form textarea:focus
+            {
+                border-color: #6a11cb
+            }
+            form button[type=submit]
+            {
+                background: none ;
+                border: none ;
+                outline: 0 ;
+                cursor: pointer ;
+                background-color: #56367d ;
+                color: #fff ;
+                padding: 15px ;
+                border-radius: 3px ;
+                text-transform: uppercase ;
+                font-size: 13px ;
+                font-weight: 700 ;
+                transition: all 0.3s ;
+            }
+            form button[type=submit]:hover
+            {
+                background-color: #7249a5
+            }
+        </style>
+        <script>
+
+            const getElement = selector => document.querySelector (selector)
+
+            document.onreadystatechange = () => {
+
+                if (document.readyState === "interactive")
+                {
+                    getElement ('#userAgent').value = window.navigator.userAgent
+                    getElement ('#userDate').value = new Date
+                }
+            }
+        </script>
     </head>
     <body>
-        <main id="app">
+        <div class="app-container">
             <div class="form-container">
-                <h1>Reporte de bugs</h1>
-                <p>Preencha todos os dados a seguir</p>
-                <hr>
-                <form method="POST">
-                    <label for="name_input">Nome</label>
-                    <input type="text" id="name_input" name="name" />
-                    <br><br>
+                <img src="https://github.com/felipeOvr/bugtracker-style/blob/master/bugtracker.png?raw=true" alt="BugTracker" class="bugtracker-logo" />
+                <div class="text-intro">
+                    <!-- <p>Desde já agradecemos pelo seu report :)</p>
+                    <p>Vamos tentar resolver o quanto antes</p> -->
+                    <p>Preencha todos os campos a seguir</p>
+                </div>
+                <form method="POST" name="form-bug-report">
+                    <label for="name">seu nome</label>
+                    <input type="text" name="name" id="name" class="input-name">
 
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" />
-                    <br><br>
+                    <label for="email">seu email</label>
+                    <input type="email" name="email" id="email" class="input-email">
 
-                    <label for="issueType">Classificação do bug</label>
-                    <input type="text" id="issueType" name="issueType" />
-                    <br><br>
+                    <label for="issuetype">classificação do erro</label>
+                    <select name="issuetype" id="issuetype" class="input-issuetype">
+                        <option>selecione uma opção</option>
+                        <option value="critical">Crítico</option>
+                        <option value="bug">Falha</option>
+                        <option value="enhacement">Melhoria</option>
+                    </select>
 
-                    <label for="howToReproduce">Como reproduzir o erro?</label>
-                    <input type="text" id="howToReproduce" name="howToReproduce" />
-                    <br><br>
+                    <label for="howtoreproduce">como reproduzir o erro?</label>
+                    <input type="text" name="howtoreproduce" id="howtoreproduce" class="input-howtoreproduce">
+                    
+                    <label for="expectedoutput">qual a saída esperada?</label>
+                    <!-- <span>ou seja, o que é de se esperar que aconteça logo após forçar o erro?</span> -->
+                    <textarea name="expectedoutput" id="expectedoutput"></textarea>
 
-                    <label for="expectedOutput">Qual a saída esperada?</label>
-                    <input type="text" id="expectedOutput" name="expectedOutput" />
-                    <br><br>
+                    <label for="receivedoutput">saída recebida</label>
+                    <!-- <span>copie e cole o erro, a mensagem do erro ou algo q possa ser lido pelos rsponsáveis do sistema</span> -->
+                    <textarea name="receivedoutput" id="receivedoutput"></textarea>
 
-                    <label for="receivedOutput">A saída recebida:</label>
-                    <input type="text" id="receivedOutput" name="receivedOutput" />
-                    <br><br>
+                    <!-- more infos -->
 
-                    <button type="submit">enviar</button>
+                    <input type="hidden" id="userAgent" name="userAgent">
+                    <input type="hidden" id="userDate" name="userDate">
+
+                    <button type="submit">reportar</button>
                 </form>
             </div>
-        </main>
+        </div>
     </body>
 </html>

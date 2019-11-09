@@ -1,6 +1,16 @@
 <img src="./bugtracker.png">
 
-<p>Semana fullstack lab</p>
+Projeto resultado do FullStack Lab Da [DevPleno](https://www.devpleno.com/)
 
+# Sobre
 
-* projeto não concluído
+Feito em Node, O projeto BugTracker tem como objetivo coletar de maneira simples e rápida, relatos de bugs em sistemas. Se encaixa perfeitamente em qualquer empresa que trabalhe com desenvolvimento de sistemas.
+
+Os dados coletados no formulário, vão para uma planilha do google e graças a praticidade das ferramentas do google, a planilha pode ser facilmente compartilhada com pessoas que precisem ter acesso a essas informaçõe e solucionar o problema.
+
+# Foram usados
+
+* ejs
+* google-spreadsheet API
+* express
+* sendgrid
