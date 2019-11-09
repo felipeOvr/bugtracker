@@ -14,3 +14,15 @@ Os dados coletados no formulário, vão para uma planilha do google e graças a 
 * google-spreadsheet API
 * express
 * sendgrid
+
+
+#preview
+
+<img src="./form.png">
+Formulário de arrecadação de informações.
+<br>
+<br>
+<br>
+
+<img src="./success.png">
+Aviso de que o relato foi enviado com sucesso.
